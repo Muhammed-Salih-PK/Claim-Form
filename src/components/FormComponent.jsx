@@ -75,13 +75,13 @@ const FormComponent = () => {
           {/* Block 1 */}
           <div className='bg-gray-50 p-2 pl-5 rounded-3xl h-auto md:h-full md:col-span-4 md:row-span-5 md:col-start-1 md:row-start-10 '>
             <div className='flex flex-col pr-5 sm:pr-16 md:pr-20'>
-              <span className='font-bold font-sans text-xl sm:text-lg lg:text-2xl text-[#4a2a5c] mb-1 md:mb-0.5'>
+              <span className='font-bold font-sans text-xl sm:text-lg lg:text-xl text-[#4a2a5c]  mb-1 md:mb-0'>
                 Have you or a loved one been affected by Mesothelioma?
               </span>
-              <span className='text-xs sm:text-sm md:text-xs lg:text-sm text-pretty mb-0.5'>
+              <span className='text-xs sm:text-sm md:text-xs lg:text-sm text-pretty '>
                 As a woman, you've carried the weight of care, love, and resilience. Now it’s time someone stands with you.
               </span>
-              <ul className='list-disc text-xs lg:text-[13px] pl-5 space-y-1'>
+              <ul className='list-disc text-xs lg:text-[12.5px] pl-5 '>
                 <li>Secondary Asbestos exposure is common</li>
                 <li>Misdiagnosis delays are more frequent in women</li>
                 <li>Women have won significant legal settlements</li>
@@ -147,14 +147,14 @@ const FormComponent = () => {
           {/* Block 3 */}
           <div className='bg-blue-900/70 p-4 rounded-3xl md:col-span-4 md:row-span-14 md:col-start-5 md:row-start-1'>
             <div className='text-white'>
-              <div className='mt-6 md:mt-14 font-semibold text-2xl md:text-3xl lg:text-4xl font-sans mb-5'>
+              <div className='mt-4  font-semibold text-2xl md:text-3xl lg:text-4xl font-sans mb-5'>
                 <h2>Claim Form</h2>
               </div>
 
               <form onSubmit={handleSubmit}>
-                <div className='space-y-4  '>
+                <div className='space-y-2  '>
                   {/*  Name Fields  */}
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                  <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2'>
                     <div>
                       <input
                         type='text'
@@ -180,7 +180,7 @@ const FormComponent = () => {
                   </div>
 
                   {/*  Contact Fields */}
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                  <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2'>
                     <div>
                       <input
                         type='tel'
@@ -206,7 +206,7 @@ const FormComponent = () => {
                   </div>
 
                   {/* Personal Info  */}
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                  <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2'>
                     <div>
                       <input
                         name='dob'
@@ -232,7 +232,7 @@ const FormComponent = () => {
                   </div>
 
                   {/*  Diagnosis Info */}
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                  <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2'>
                     <div>
                       <input
                         name='diagnosisDate'
@@ -263,13 +263,13 @@ const FormComponent = () => {
                       onChange={handleChange}
                       rows={1}
                       placeholder='Tell us your story (optional)'
-                      className='w-full bg-transparent border-b border-white/50 text-sm md:text-base min-h-[60px] focus:outline-0'
+                      className='w-full bg-transparent border-b border-white/50 text-sm md:text-base mt-2 focus:outline-0'
                     ></textarea>
                   </div>
                 </div>
 
                 {/* <!-- Checkboxes --> */}
-                <div className='mt-8 space-y-4'>
+                <div className='mt-8 '>
                   <label className='flex items-start gap-3'>
                     <input name='agree' type='checkbox' checked={formData.agree} onChange={handleChange} className='mt-1 ' required />
                     <span className='text-xs md:text-sm'>
